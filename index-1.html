@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIGITAL HEALTH TECHNOLOGY ZAMBIA (DHT)</title>
+  <!-- Professional Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-top">
+      <h1 class="site-title">DIGITAL HEALTH TECHNOLOGY ZAMBIA (DHT)</h1>
+      <p>Innovating healthcare through technology</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero + Collapsibles Row -->
+  <section id="hero-row">
+    <!-- Left side: Hero text -->
+    <div class="hero-text">
+      <h2>Improving Healthcare in Zambia</h2>
+      <p>
+        Through digital systems, advanced equipment, innovation, telemedicine, mHealth, 
+        electronic health records (EHR), diagnostics, patient care, medical devices, 
+        data analytics, and interoperability.
+      </p>
+    </div>
+
+    <!-- Right side: Collapsibles -->
+    <div class="hero-collapsibles">
+      <!-- Services -->
+      <section id="services">
+        <button class="toggle-btn">📋 Our Services</button>
+        <div class="content">
+          <ul>
+            <li>Medical Equipment Sourcing & Importation</li>
+            <li>User Training & Capacity Building</li>
+            <li>Calibration & Preventive Maintenance</li>
+            <li>After-Sales Service & Technical Support</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Medical Equipment Categories -->
+      <section id="equipment">
+        <button class="toggle-btn">⚙️ Medical Equipment Categories</button>
+        <div class="content">
+          <h3>📱 mHealth Solutions</h3>
+          <ul>
+            <li>Babylon Health</li>
+            <li>Ada Health</li>
+            <li>CommCare</li>
+            <li>WelTel</li>
+            <li>M-TIBA</li>
+          </ul>
+          <!-- keep rest of categories here -->
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- Featured Equipment -->
+  <section id="featured-equipment">
+    <h2>Featured Equipment</h2>
+
+    <!-- Equipment Card 1 -->
+    <div class="equipment-card">
+      <img src="images/GE PATIENT MONITOR.webp" alt="GE B105/B125 Patient Monitor" class="equipment-img">
+      <div class="equipment-info">
+        <h3>GE B105/B125 Patient Monitor</h3>
+        <p>Compact, reliable bedside monitors designed for adult and pediatric care...</p>
+        <ul>
+          <li><strong>Display:</strong> 10.4" (B105) or 12" (B125)</li>
+          <li><strong>Parameters:</strong> ECG, SpO₂, NIBP, respiration, temperature</li>
+          <li><strong>Connectivity:</strong> GE CARESCAPE™ network</li>
+        </ul>
+        <a href="#inquiry-form" class="btn btn-inquiry">Send Inquiry / Ask for Quote</a>
+      </div>
+    </div>
+
+    <!-- Equipment Card 2 -->
+    <div class="equipment-card">
+      <img src="images/Telemedicine PARSYS S2.webp" alt="Telemedicine Station S2 PARSYS" class="equipment-img">
+      <div class="equipment-info">
+        <h3>Telemedicine Station S2 (PARSYS)</h3>
+        <p>A compact, mobile telemedicine unit integrating certified medical devices...</p>
+        <ul>
+          <li><strong>ECG:</strong> 12‑lead, wireless</li>
+          <li><strong>Blood Pressure:</strong> Automatic armband</li>
+          <li><strong>Pulse Oximeter:</strong> Accurate SpO₂</li>
+          <li><strong>Teleconsultation:</strong> One‑click videoconference</li>
+        </ul>
+        <a href="#inquiry-form" class="btn btn-inquiry">Send Inquiry / Ask for Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inquiry Form -->
+  <section id="inquiry-form">
+    <h2>Send Inquiry / Ask for Quote</h2>
+    <!-- Connected to Formspree -->
+    <form action="https://formspree.io/f/movrvnwl" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">Your Inquiry:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <!-- Hidden fields for better email handling -->
+      <input type="hidden" name="_subject" value="New Inquiry from DHT Zambia">
+      <input type="hidden" name="form_name" value="DHT Inquiry Form">
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit" class="btn-inquiry">Submit Inquiry</button>
+    </form>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We specialize in sourcing, importing, and supporting medical equipment across Zambia...</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: digitalhealthzm@gmail.com</p>
+    <p>Phone: +260 965894060</p>
+    <p>Location: Lusaka, Zambia</p>
+
+    <!-- Buttons -->
+    <a href="mailto:digitalhealthzm@gmail.com" class="btn btn-gmail">Email Us</a>
+    <a href="https://facebook.com/YourPageName" target="_blank" class="btn btn-facebook">
+      <img src="images/facebook logo.jpeg" alt="Facebook" class="icon"> Facebook
+    </a>
+    <a href="https://wa.me/260965894060" target="_blank" class="btn btn-whatsapp">WhatsApp Us</a>
+    <a href="#about" class="btn">Learn More</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DIGITAL HEALTH TECHNOLOGY ZAMBIA (DHT). All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
